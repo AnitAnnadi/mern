@@ -21,7 +21,7 @@ const Register = () => {
 
   // global state and useNavigate
   const handleChange = (e) => {
-    setValues({ ...values, [e.target.name]: [e.target.value] });
+    setValues({ ...values, [e.target.name]: e.target.value });
   };
   const onSubmit = (e) => {
     e.preventDefault();
